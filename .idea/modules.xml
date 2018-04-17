@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/batman-bysj-common/batman-bysj-common.iml" filepath="$PROJECT_DIR$/batman-bysj-common/batman-bysj-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-base/batman-bysj-common-base.iml" filepath="$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-base/batman-bysj-common-base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-config/batman-bysj-common-config.iml" filepath="$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-config/batman-bysj-common-config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-core/batman-bysj-common-core.iml" filepath="$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-core/batman-bysj-common-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-dao/batman-bysj-common-dao.iml" filepath="$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-dao/batman-bysj-common-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-model/batman-bysj-common-model.iml" filepath="$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-model/batman-bysj-common-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-service/batman-bysj-common-service.iml" filepath="$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-service/batman-bysj-common-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-util/batman-bysj-common-util.iml" filepath="$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-util/batman-bysj-common-util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/batman-bysj-discovery/batman-bysj-discovery.iml" filepath="$PROJECT_DIR$/batman-bysj-discovery/batman-bysj-discovery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/batman-bysj-master.iml" filepath="$PROJECT_DIR$/batman-bysj-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/batman-bysj-provider/batman-bysj-provider.iml" filepath="$PROJECT_DIR$/batman-bysj-provider/batman-bysj-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/batman-bysj-provider/batman-bysj-provider-admin/batman-bysj-provider-admin.iml" filepath="$PROJECT_DIR$/batman-bysj-provider/batman-bysj-provider-admin/batman-bysj-provider-admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/batman-bysj-provider-api/batman-bysj-provider-admin-api/batman-bysj-provider-admin-api.iml" filepath="$PROJECT_DIR$/batman-bysj-provider-api/batman-bysj-provider-admin-api/batman-bysj-provider-admin-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/batman-bysj-provider-api/batman-bysj-provider-api.iml" filepath="$PROJECT_DIR$/batman-bysj-provider-api/batman-bysj-provider-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/batman-bysj-provider/batman-bysj-provider-teacher/batman-bysj-provider-teacher.iml" filepath="$PROJECT_DIR$/batman-bysj-provider/batman-bysj-provider-teacher/batman-bysj-provider-teacher.iml" />
+      <module fileurl="file://$PROJECT_DIR$/batman-bysj-sidecar/batman-bysj-sidecar.iml" filepath="$PROJECT_DIR$/batman-bysj-sidecar/batman-bysj-sidecar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/batman-bysj-sidecar/batman-bysj-sidecar-client/batman-bysj-sidecar-client.iml" filepath="$PROJECT_DIR$/batman-bysj-sidecar/batman-bysj-sidecar-client/batman-bysj-sidecar-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/batman-bysj-sidecar/batman-bysj-sidecar-server/batman-bysj-sidecar-server.iml" filepath="$PROJECT_DIR$/batman-bysj-sidecar/batman-bysj-sidecar-server/batman-bysj-sidecar-server.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,18 @@
+server:
+    port: 5689 #启动端口
+
+spring:
+    application:
+        name: batman-bysj-sidecar-client
+
+eureka:
+    instance:
+        instance-id: ${spring.application.name}:${server.port}
+        prefer-ip-address: true
+        lease-renewal-interval-in-seconds: 5
+        lease-expiration-duration-in-seconds: 15
+        statusPageUrlPath: /info
+        healthCheckUrlPath: /health
+    client:
+        serviceUrl:
+            defaultZone: http://localhost:1100/eureka/

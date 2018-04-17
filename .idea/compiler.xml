@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="batman-bysj-common-base" />
+        <module name="batman-bysj-common-config" />
+        <module name="batman-bysj-common-core" />
+        <module name="batman-bysj-common-dao" />
+        <module name="batman-bysj-common-model" />
+        <module name="batman-bysj-common-service" />
+        <module name="batman-bysj-common-util" />
+        <module name="batman-bysj-discovery" />
+        <module name="batman-bysj-provider-admin" />
+        <module name="batman-bysj-provider-admin-api" />
+        <module name="batman-bysj-provider-teacher" />
+        <module name="batman-bysj-sidecar-client" />
+        <module name="batman-bysj-sidecar-server" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="batman-bysj-common" target="1.8" />
+      <module name="batman-bysj-common-base" target="1.8" />
+      <module name="batman-bysj-common-config" target="1.8" />
+      <module name="batman-bysj-common-core" target="1.8" />
+      <module name="batman-bysj-common-dao" target="1.8" />
+      <module name="batman-bysj-common-model" target="1.8" />
+      <module name="batman-bysj-common-service" target="1.8" />
+      <module name="batman-bysj-common-util" target="1.8" />
+      <module name="batman-bysj-discovery" target="1.8" />
+      <module name="batman-bysj-master" target="1.8" />
+      <module name="batman-bysj-provider" target="1.8" />
+      <module name="batman-bysj-provider-admin" target="1.8" />
+      <module name="batman-bysj-provider-admin-api" target="1.8" />
+      <module name="batman-bysj-provider-api" target="1.8" />
+      <module name="batman-bysj-provider-teacher" target="1.8" />
+      <module name="batman-bysj-sidecar" target="1.8" />
+      <module name="batman-bysj-sidecar-client" target="1.8" />
+      <module name="batman-bysj-sidecar-server" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
