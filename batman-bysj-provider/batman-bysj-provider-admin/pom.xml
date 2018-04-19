@@ -34,7 +34,11 @@
 			<artifactId>batman-bysj-provider-admin-api</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
-
+		<dependency>
+			<groupId>com.batman.bysj</groupId>
+			<artifactId>batman-bysj-common-config</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 		<!--mybatis-plus-->
 		<dependency>
 			<groupId>com.baomidou</groupId>

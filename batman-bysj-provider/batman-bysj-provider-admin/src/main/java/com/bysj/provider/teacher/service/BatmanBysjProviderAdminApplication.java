@@ -12,8 +12,8 @@ import org.springframework.context.annotation.ComponentScan;
 @EnableFeignClients
 @EnableEurekaClient
 @SpringBootApplication
-@ComponentScan( basePackages = "com.batman.bysj.common.service.*")
-@ComponentScan( basePackages = "com.batman.bysj.provider.api.*")
+@ComponentScan( basePackages = "com.batman.bysj.common.service")
+@ComponentScan( basePackages = "com.batman.bysj.provider.api")
 @MapperScan(basePackages = "com.batman.bysj.common.dao.mapper")
 public class BatmanBysjProviderAdminApplication {
 

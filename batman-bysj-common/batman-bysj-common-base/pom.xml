@@ -23,7 +23,11 @@
 	</properties>
 
 	<dependencies>
-
+		<dependency>
+			<groupId>com.batman.bysj</groupId>
+			<artifactId>batman-bysj-common-config</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 
 	<build>

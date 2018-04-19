@@ -8,6 +8,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.test.context.junit4.SpringRunner;
 import tk.mybatis.mapper.entity.Example;
 
@@ -19,17 +20,23 @@ import java.util.*;
 public class BatmanBysjProviderAdminApplicationTests {
     @Autowired
     private TestMapper testMapper;
+//    @Autowired
+//    private TestService testService;
     @Autowired
-    private TestService testService;
+    private JdbcTemplate jdbcTemplate;
     @Test
     public void contextLoads() {
+        List<Map<String, Object>> maps = jdbcTemplate.queryForList("select * from test");
+        System.out.println(maps.size() + "------------------------------");
 
-        PageHelper.startPage(1, 10);
-        List<com.batman.bysj.common.model.Test> tests1 = testService.selectByExample(new Example(com.batman.bysj.common.model.Test.class));
-
-        tests1.forEach(i -> {
-            System.out.println(i.toString());
-        });
+        List<com.batman.bysj.common.model.Test> tests = testMapper.selectAll();
+        System.out.println("testMapper->>>>>>>>>>>>>>>>>>>>>>" + tests.size());
+//        PageHelper.startPage(1, 10);
+//        List<com.batman.bysj.common.model.Test> tests1 = testService.selectByExample(new Example(com.batman.bysj.common.model.Test.class));
+//
+//        tests1.forEach(i -> {
+//            System.out.println(i.toString());
+//        });
     }
 
     @Test

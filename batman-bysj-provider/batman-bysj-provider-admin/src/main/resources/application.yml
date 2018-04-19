@@ -1,7 +1,6 @@
 server:
   port: 2200
 
-
 eureka:
   instance:
     instance-id: ${spring.application.name}:${server.port}
@@ -14,11 +13,11 @@ eureka:
     serviceUrl:
       defaultZone: http://127.0.0.1:1100/eureka/
 
-  mybatis:
-    configuration:
-      map-underscore-to-camel-case: true
-    mapper-locations: mybatis/**/*Mapper.xml
-    typeAliasesPackage: com.batman.bysj.common.model.*
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+  mapper-locations: mybatis/**/*Mapper.xml
+  typeAliasesPackage: com.batman.bysj.common.model.*
 
 
 spring:
@@ -57,3 +56,5 @@ pagehelper:
   reasonable: true
   support-methods-arguments: true
   params: count=countSql
+hello:
+  msg: 123213123123213
