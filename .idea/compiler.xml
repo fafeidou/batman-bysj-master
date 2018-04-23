@@ -12,6 +12,7 @@
         <module name="batman-bysj-common-dao" />
         <module name="batman-bysj-common-mail" />
         <module name="batman-bysj-common-model" />
+        <module name="batman-bysj-common-oss" />
         <module name="batman-bysj-common-service" />
         <module name="batman-bysj-common-util" />
         <module name="batman-bysj-discovery" />
@@ -30,6 +31,7 @@
       <module name="batman-bysj-common-dao" target="1.8" />
       <module name="batman-bysj-common-mail" target="1.8" />
       <module name="batman-bysj-common-model" target="1.8" />
+      <module name="batman-bysj-common-oss" target="1.8" />
       <module name="batman-bysj-common-service" target="1.8" />
       <module name="batman-bysj-common-util" target="1.8" />
       <module name="batman-bysj-discovery" target="1.8" />

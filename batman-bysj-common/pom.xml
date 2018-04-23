@@ -16,6 +16,7 @@
 		<module>batman-bysj-common-dao</module>
 		<module>batman-bysj-common-service</module>
 		<module>batman-bysj-common-mail</module>
+		<module>batman-bysj-common-oss</module>
 	</modules>
 	<name>batman-bysj-common</name>
 	<description>batman-bysj-common</description>
