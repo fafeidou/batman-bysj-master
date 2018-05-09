@@ -22,6 +22,8 @@
         <option value="$PROJECT_DIR$/batman-bysj-sidecar-server/pom.xml" />
         <option value="$PROJECT_DIR$/batman-bysj-sidecar-client/pom.xml" />
         <option value="$PROJECT_DIR$/batman-bysj-common-oss/pom.xml" />
+        <option value="$PROJECT_DIR$/batman-bysj-common-kafka/pom.xml" />
+        <option value="$PROJECT_DIR$/batman-bysj-common-sms/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

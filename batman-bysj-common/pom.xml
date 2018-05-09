@@ -17,6 +17,8 @@
 		<module>batman-bysj-common-service</module>
 		<module>batman-bysj-common-mail</module>
 		<module>batman-bysj-common-oss</module>
+		<module>batman-bysj-common-kafka</module>
+		<module>batman-bysj-common-sms</module>
 	</modules>
 	<name>batman-bysj-common</name>
 	<description>batman-bysj-common</description>
