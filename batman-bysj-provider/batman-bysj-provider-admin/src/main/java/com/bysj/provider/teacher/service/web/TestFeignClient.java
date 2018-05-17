@@ -1,6 +1,5 @@
 package com.bysj.provider.teacher.service.web;
 
-import com.batman.bysj.common.model.Test;
 import com.batman.bysj.common.service.TestService;
 import com.batman.bysj.provider.api.TestFeignApi;
 import com.bysj.common.util.AbstractListExcelGenerator;
@@ -17,11 +16,12 @@ import java.util.*;
  */
 
 @RestController
-public class TestFeignClient extends  BaseController implements TestFeignApi{
+public class TestFeignClient extends BaseController implements TestFeignApi {
     @Autowired
     private TestService testService;
+
     @Override
-    public ResponseEntity<byte []> test() throws IOException {
+    public ResponseEntity<byte[]> test() throws IOException {
         // 实现对应接口
         AbstractListExcelGenerator<Map<String, String>, Object> generator =
                 new AbstractListExcelGenerator<Map<String, String>, Object>() {
@@ -29,6 +29,7 @@ public class TestFeignClient extends  BaseController implements TestFeignApi{
                     public String title() {
                         return "标题";
                     }
+
                     @Override
                     protected List<Map<String, String>> data(List<String> fields, Object o) {
                         HashMap<String, String> a = new HashMap<>();
@@ -45,6 +46,7 @@ public class TestFeignClient extends  BaseController implements TestFeignApi{
                         d.put("key2", "数据4-2");
                         return Arrays.asList(a, b, c, d);
                     }
+
                     @Override
                     protected LinkedHashMap<String, String> sortedFieldDict(List<String> fields) {
                         LinkedHashMap<String, String> test = new LinkedHashMap<>();
@@ -54,7 +56,7 @@ public class TestFeignClient extends  BaseController implements TestFeignApi{
                     }
                 };
         byte[] bytes = generator.generateExcelFile(null, null);
-        return  toResponse("测试excel" + ".xlsx",
+        return toResponse("测试excel" + ".xlsx",
                 bytes);
     }
 }

@@ -3,9 +3,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.batman.bysj.provider.api</groupId>
 	<artifactId>batman-bysj-provider-api</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<modules>
 		<module>batman-bysj-provider-admin-api</module>
@@ -14,7 +12,7 @@
 	<description>batman-bysj-provider-api</description>
 
 	<parent>
-		<groupId>com.batman.bysj.master</groupId>
+		<groupId>com.batman.bysj</groupId>
 		<artifactId>batman-bysj-master</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
@@ -41,15 +39,4 @@
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
 	</dependencies>
-
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
-	</build>
-
-
 </project>

@@ -1,7 +1,10 @@
 package com.bysj.provider.teacher.service;
 
 import com.batman.bysj.provider.api.TestFeignApi;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.io.IOException;
 
 /**
  * @author victor.qin
@@ -10,12 +13,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class TestFeignClient implements TestFeignApi{
+    @Override
+    public ResponseEntity<byte[]> test() throws IOException {
+        return null;
+    }
 //    @Autowired
 //    private TestService testService;
-    @Override
-    public String test() {
-//        List<Test> tests = testService.selectAll();
-        return "sfsfsf";
-//        return tests.toString();
-    }
+
 }

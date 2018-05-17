@@ -25,12 +25,12 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>com.batman.bysj.common.service</groupId>
+			<groupId>com.batman.bysj</groupId>
 			<artifactId>batman-bysj-common-service</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.bysj.provider</groupId>
+			<groupId>com.batman.bysj</groupId>
 			<artifactId>batman-bysj-provider-admin-api</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
@@ -77,14 +77,7 @@
 
 	</dependencies>
 
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
-	</build>
+
 
 
 </project>

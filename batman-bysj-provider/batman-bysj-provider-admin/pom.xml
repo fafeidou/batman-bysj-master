@@ -2,15 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-
-	<groupId>com.bysj.provider</groupId>
 	<artifactId>batman-bysj-provider-admin</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
-
-	<name>batman-bysj-provider-admin</name>
-	<description>batman-bysj-provider-admin</description>
-
 	<parent>
 		<groupId>com.batman.bysj</groupId>
 		<artifactId>batman-bysj-provider</artifactId>
@@ -25,18 +17,23 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>com.batman.bysj.common.service</groupId>
+			<groupId>com.batman.bysj</groupId>
 			<artifactId>batman-bysj-common-service</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.bysj.provider</groupId>
+			<groupId>com.batman.bysj</groupId>
 			<artifactId>batman-bysj-provider-admin-api</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.batman.bysj</groupId>
 			<artifactId>batman-bysj-common-config</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.batman.bysj</groupId>
+			<artifactId>batman-bysj-common-util</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 		<!--mybatis-plus-->
@@ -77,17 +74,5 @@
 			<artifactId>druid</artifactId>
 			<version>1.1.9</version>
 		</dependency>
-
 	</dependencies>
-
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
-	</build>
-
-
 </project>

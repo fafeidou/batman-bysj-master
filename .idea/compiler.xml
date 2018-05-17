@@ -14,6 +14,7 @@
         <module name="batman-bysj-common-mail" />
         <module name="batman-bysj-common-model" />
         <module name="batman-bysj-common-oss" />
+        <module name="batman-bysj-common-redis" />
         <module name="batman-bysj-common-service" />
         <module name="batman-bysj-common-sms" />
         <module name="batman-bysj-common-util" />
@@ -35,6 +36,7 @@
       <module name="batman-bysj-common-mail" target="1.8" />
       <module name="batman-bysj-common-model" target="1.8" />
       <module name="batman-bysj-common-oss" target="1.8" />
+      <module name="batman-bysj-common-redis" target="1.8" />
       <module name="batman-bysj-common-service" target="1.8" />
       <module name="batman-bysj-common-sms" target="1.8" />
       <module name="batman-bysj-common-util" target="1.8" />

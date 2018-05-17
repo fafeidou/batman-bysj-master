@@ -4,11 +4,6 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<artifactId>batman-bysj-common-oss</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
-
-	<name>batman-bysj-common-oss</name>
-	<description>batman-bysj-common-oss</description>
 
 	<parent>
 		<groupId>com.batman.bysj</groupId>
@@ -68,15 +63,5 @@
             <artifactId>joda-time</artifactId>
         </dependency>
     </dependencies>
-
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
-	</build>
-
 
 </project>

@@ -12,8 +12,8 @@
 	<description>阿里大鱼接口实现</description>
 
 	<parent>
-		<groupId>com.batman.bysj.master</groupId>
-		<artifactId>batman-bysj-master</artifactId>
+		<groupId>com.batman.bysj</groupId>
+		<artifactId>batman-bysj-common</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 

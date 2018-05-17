@@ -26,21 +26,22 @@
 package com.batman.bysj.common.oss.cloud;
 
 import com.batman.bysj.common.oss.config.CloudStorageConfig;
-import com.qcloud.cos.utils.IOUtils;
 import com.qiniu.common.Zone;
 import com.qiniu.http.Response;
 import com.qiniu.storage.Configuration;
 import com.qiniu.storage.UploadManager;
 import com.qiniu.util.Auth;
+import org.apache.commons.io.IOUtils;
 
 import java.io.IOException;
 import java.io.InputStream;
 
 /**
  * 七牛云存储
-* @author victor.qin
-* @date 2018/4/23 17:14
-*/
+ *
+ * @author victor.qin
+ * @date 2018/4/23 17:14
+ */
 public class QiniuCloudStorageService extends CloudStorageService {
     private UploadManager uploadManager;
     private String token;
