@@ -1,27 +1,25 @@
-package com.batman.bysj.common.kafka;
+package com.batman.bysj.common.redis;
 
-import com.batman.bysj.common.redis.MasterDataCacheHelper;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.redis.connection.RedisConnectionFactory;
-import org.springframework.kafka.annotation.EnableKafka;
+import org.springframework.data.redis.core.RedisTemplate;
 
 @SpringBootApplication
-@EnableKafka
-public class BatmanBysjCommonKafkaApplication implements CommandLineRunner {
-
-//	@Autowired
-//	private MessageProducer messageProducer;
-
+public class BatmanBysjCommonRedisApplication implements CommandLineRunner {
     public static void main(String[] args) {
-        SpringApplication.run(BatmanBysjCommonKafkaApplication.class, args);
+        SpringApplication.run(BatmanBysjCommonRedisApplication.class, args);
     }
 
     @Override
-    public void run(String... strings) throws Exception {
-//		messageProducer.sendMessage("test-topic","111111111111111111111111");
+    public void run(String... args) throws Exception {
+//        MasterDataCacheHelper.setValue("aaa", "sdfsdf");
+        Object aaa = MasterDataCacheHelper.getValue("aaa");
+        MasterDataCacheHelper.delete("aaa");
+        System.out.println(aaa);
     }
 
     @Configuration
@@ -30,4 +28,5 @@ public class BatmanBysjCommonKafkaApplication implements CommandLineRunner {
             MasterDataCacheHelper.useRedisConnectionFactory(redisConnectionFactory);
         }
     }
+
 }

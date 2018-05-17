@@ -15,7 +15,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
-@Component
 public final class MasterDataCacheHelper {
 
     private final static Logger LOGGER = LoggerFactory.getLogger(MasterDataCacheHelper.class);
