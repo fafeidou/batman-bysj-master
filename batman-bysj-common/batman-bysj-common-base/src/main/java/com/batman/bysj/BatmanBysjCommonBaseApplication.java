@@ -12,7 +12,8 @@ public class BatmanBysjCommonBaseApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-
+        Test test = (Test) Class.forName("com.batman.bysj.Test").newInstance();
+        test.afterPropertiesSet();
 
     }
 

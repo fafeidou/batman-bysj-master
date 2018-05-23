@@ -42,7 +42,7 @@ public class OSSFactory {
 
     public CloudStorageService build() {
         if (config.getType().equals(OSSConstant.TYPE_QINIU)) {
-//            return new QiniuCloudStorageService(config);
+            return new QiniuCloudStorageService(config);
         } else if (config.getType().equals(OSSConstant.TYPE_ALIYUN)) {
             return new AliyunCloudStorageService(config);
         } else if (config.getType().equals(OSSConstant.TYPE_QCLOUD)) {

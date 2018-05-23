@@ -7,9 +7,6 @@
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>batman-bysj-common-base</name>
-    <description>batman-bysj-common-base</description>
-
     <parent>
         <groupId>com.batman.bysj</groupId>
         <artifactId>batman-bysj-common</artifactId>
@@ -23,7 +20,10 @@
     </properties>
 
     <dependencies>
-
+        <dependency>
+            <groupId>commons-beanutils</groupId>
+            <artifactId>commons-beanutils</artifactId>
+        </dependency>
     </dependencies>
 
 

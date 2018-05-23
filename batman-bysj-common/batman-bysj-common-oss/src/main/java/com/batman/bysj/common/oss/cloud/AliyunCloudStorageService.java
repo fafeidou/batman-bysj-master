@@ -32,10 +32,11 @@ import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 
 /**
-* 阿里云上传实现
-* @author victor.qin
-* @date 2018/4/23 17:12
-*/
+ * 阿里云上传实现
+ *
+ * @author victor.qin
+ * @date 2018/4/23 17:12
+ */
 public class AliyunCloudStorageService extends CloudStorageService {
     private OSSClient client;
 

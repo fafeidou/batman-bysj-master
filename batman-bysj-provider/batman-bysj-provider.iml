@@ -26,9 +26,6 @@
     <orderEntry type="library" name="Maven: commons-collections:commons-collections:3.2.2" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-actuator:1.5.10.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-actuator:1.5.10.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.8.10" level="project" />
-    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.8.0" level="project" />
-    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.8.10" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-context:4.3.14.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-aop:4.3.14.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-beans:4.3.14.RELEASE" level="project" />
@@ -83,7 +80,6 @@
     <orderEntry type="library" name="Maven: org.springframework.cloud:spring-cloud-starter-netflix-archaius:1.4.3.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: commons-configuration:commons-configuration:1.8" level="project" />
     <orderEntry type="library" name="Maven: commons-lang:commons-lang:2.6" level="project" />
-    <orderEntry type="library" name="Maven: com.google.guava:guava:18.0" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.cloud:spring-cloud-starter-netflix-ribbon:1.4.3.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: com.netflix.ribbon:ribbon:2.2.4" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: com.netflix.ribbon:ribbon-transport:2.2.4" level="project" />
@@ -147,5 +143,9 @@
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework:spring-test:4.3.14.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.projectlombok:lombok:1.16.20" level="project" />
     <orderEntry type="library" name="Maven: org.apache.commons:commons-lang3:3.7" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.8.10" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.8.0" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.8.10" level="project" />
+    <orderEntry type="library" name="Maven: com.google.guava:guava:20.0" level="project" />
   </component>
 </module>

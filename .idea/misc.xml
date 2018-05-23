@@ -25,6 +25,7 @@
         <option value="$PROJECT_DIR$/batman-bysj-common-kafka/pom.xml" />
         <option value="$PROJECT_DIR$/batman-bysj-common-sms/pom.xml" />
         <option value="$PROJECT_DIR$/batman-bysj-common-redis/pom.xml" />
+        <option value="$PROJECT_DIR$/batman-bysj-common-mongo/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
