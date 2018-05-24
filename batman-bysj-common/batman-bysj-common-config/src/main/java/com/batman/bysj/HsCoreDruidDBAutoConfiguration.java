@@ -1,7 +1,7 @@
 package com.batman.bysj;
 
 import com.alibaba.druid.pool.DruidDataSource;
-import com.batman.bysj.common.dao.mapper.TestMapper;
+import com.batman.bysj.common.dao.core.mapper.ComCodeMapper;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.SqlSessionTemplate;
@@ -13,7 +13,6 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Primary;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 
@@ -25,23 +24,22 @@ import java.sql.SQLException;
  * @date 2018/4/18 10:28
  */
 @Configuration
-@MapperScan(/*basePackages = "com.batman.bysj.common.dao.mapper",*/
-        sqlSessionTemplateRef = "bysjSqlSessionTemplate", basePackageClasses = TestMapper.class)
-@EnableConfigurationProperties(value = BysjDruidDBProperties.class)
-public class BysjDruidDBAutoConfiguration {
+@MapperScan(/*basePackages = "com.batman.bysj.common.dao.core.mapper", */sqlSessionTemplateRef = "coreSqlSessionTemplate", basePackageClasses = ComCodeMapper.class)
+@EnableConfigurationProperties(value = HsCoreDruidDBProperties.class)
+public class HsCoreDruidDBAutoConfiguration {
 
-    private Logger logger = LoggerFactory.getLogger(BysjDruidDBAutoConfiguration.class);
+    private Logger logger = LoggerFactory.getLogger(HsCoreDruidDBAutoConfiguration.class);
 
-    private final BysjDruidDBProperties bysjDruidDBProperties;
+    private final HsCoreDruidDBProperties bysjDruidDBProperties;
 
     @Autowired
-    public BysjDruidDBAutoConfiguration(BysjDruidDBProperties bysjDruidDBProperties) {
+    public HsCoreDruidDBAutoConfiguration(HsCoreDruidDBProperties bysjDruidDBProperties) {
         this.bysjDruidDBProperties = bysjDruidDBProperties;
     }
 
-    @Bean(name = "bysjDataSource")
-    @Primary  //在同样的DataSource中，首先使用被标注的DataSource
-    public DataSource bysjDataSource() {
+    @Bean(name = "coreDataSource")
+//    @Primary  //在同样的DataSource中，首先使用被标注的DataSource
+    public DataSource coreDataSource() {
         DruidDataSource datasource = new DruidDataSource();
 
         datasource.setUrl(bysjDruidDBProperties.getUrl());
@@ -72,25 +70,22 @@ public class BysjDruidDBAutoConfiguration {
         return datasource;
     }
 
-    @Bean(name = "bysjSqlSessionFactory")
-    @Primary
-    public SqlSessionFactory bysjSqlSessionFactory(@Qualifier("bysjDataSource") DataSource dataSource) throws Exception {
+    @Bean(name = "coreSqlSessionFactory")
+    public SqlSessionFactory coreSqlSessionFactory(@Qualifier("coreDataSource") DataSource dataSource) throws Exception {
         SqlSessionFactoryBean bean = new SqlSessionFactoryBean();
         bean.setDataSource(dataSource);
         bean.setMapperLocations(new PathMatchingResourcePatternResolver().getResources(
-                "classpath:mapper/bysj/*.xml"));
+                "classpath:mapper/core/*.xml"));
         return bean.getObject();
     }
 
-    @Bean(name = "bysjTransactionManager")
-    @Primary
-    public DataSourceTransactionManager bysjTransactionManager(@Qualifier("bysjDataSource") DataSource dataSource) {
+    @Bean(name = "coreTransactionManager")
+    public DataSourceTransactionManager coreTransactionManager(@Qualifier("coreDataSource") DataSource dataSource) {
         return new DataSourceTransactionManager(dataSource);
     }
 
-    @Bean(name = "bysjSqlSessionTemplate")
-    @Primary
-    public SqlSessionTemplate bysjSqlSessionTemplate(@Qualifier("bysjSqlSessionFactory") SqlSessionFactory sqlSessionFactory) throws Exception {
+    @Bean(name = "coreSqlSessionTemplate")
+    public SqlSessionTemplate coreSqlSessionTemplate(@Qualifier("coreSqlSessionFactory") SqlSessionFactory sqlSessionFactory) {
         return new SqlSessionTemplate(sqlSessionFactory);
     }
 
