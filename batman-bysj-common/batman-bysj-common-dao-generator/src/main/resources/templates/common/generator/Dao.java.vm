@@ -1,0 +1,17 @@
+package ${dao_package};
+
+import ${model_package}.${className};
+
+import com.batman.bysj.common.dao.mybatis.MyMapper;
+import com.batman.bysj.common.model.ComCode;
+import org.apache.ibatis.annotations.Mapper;
+
+/**
+ * ${comments}
+ * @author ${author}
+ * @email ${email}
+ * @date ${datetime}
+ */
+@Mapper
+public interface ${className}Mapper extends MyMapper<${className}>{
+}

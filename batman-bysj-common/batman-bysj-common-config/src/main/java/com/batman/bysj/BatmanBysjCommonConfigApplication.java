@@ -14,18 +14,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.ComponentScans;
 import org.springframework.context.annotation.FilterType;
-import org.springframework.jdbc.core.JdbcTemplate;
 import tk.mybatis.mapper.entity.Example;
 
 import javax.annotation.Resource;
-import javax.sql.DataSource;
-import java.lang.annotation.Target;
 import java.util.List;
-import java.util.Map;
 
 @SpringBootApplication(
         exclude = MapperAutoConfiguration.class
