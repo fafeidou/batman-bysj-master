@@ -20,6 +20,7 @@
         <module name="batman-bysj-common-service" />
         <module name="batman-bysj-common-sms" />
         <module name="batman-bysj-common-util" />
+        <module name="batman-bysj-common-web" />
         <module name="batman-bysj-discovery" />
         <module name="batman-bysj-provider-admin" />
         <module name="batman-bysj-provider-admin-api" />
@@ -44,6 +45,7 @@
       <module name="batman-bysj-common-service" target="1.8" />
       <module name="batman-bysj-common-sms" target="1.8" />
       <module name="batman-bysj-common-util" target="1.8" />
+      <module name="batman-bysj-common-web" target="1.8" />
       <module name="batman-bysj-discovery" target="1.8" />
       <module name="batman-bysj-master" target="1.8" />
       <module name="batman-bysj-provider" target="1.8" />

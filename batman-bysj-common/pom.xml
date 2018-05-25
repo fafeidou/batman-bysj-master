@@ -18,6 +18,7 @@
 		<module>batman-bysj-common-sms</module>
 		<module>batman-bysj-common-redis</module>
 		<module>batman-bysj-common-dao-generator</module>
+		<module>batman-bysj-common-web</module>
 	</modules>
 	<name>batman-bysj-common</name>
 	<description>batman-bysj-common</description>

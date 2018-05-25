@@ -17,6 +17,7 @@
       <module fileurl="file://$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-service/batman-bysj-common-service.iml" filepath="$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-service/batman-bysj-common-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-sms/batman-bysj-common-sms.iml" filepath="$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-sms/batman-bysj-common-sms.iml" />
       <module fileurl="file://$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-util/batman-bysj-common-util.iml" filepath="$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-util/batman-bysj-common-util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-web/batman-bysj-common-web.iml" filepath="$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-web/batman-bysj-common-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/batman-bysj-discovery/batman-bysj-discovery.iml" filepath="$PROJECT_DIR$/batman-bysj-discovery/batman-bysj-discovery.iml" />
       <module fileurl="file://$PROJECT_DIR$/batman-bysj-master.iml" filepath="$PROJECT_DIR$/batman-bysj-master.iml" />
       <module fileurl="file://$PROJECT_DIR$/batman-bysj-provider/batman-bysj-provider.iml" filepath="$PROJECT_DIR$/batman-bysj-provider/batman-bysj-provider.iml" />
