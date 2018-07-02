@@ -36,15 +36,11 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.function.Consumer;
 
-/**
- * <p>Title: </p>
- * <p>Description: </p>
- * <p>Copyright: Copyright (c) 2017</p>
- * <p>Company: Voyageone Inc.</p>
- *
- * @author holysky.zhao 2017/11/8 17:21
- * @version 1.0
- */
+/** 
+* 
+* @author victor.qin 
+* @date 2018/6/26 10:46
+*/ 
 public abstract class BaseMongoDao<T extends BaseMongoModel> implements Repository<T, String> {
     /**
      * 默认的stream 分页大小
@@ -62,7 +58,6 @@ public abstract class BaseMongoDao<T extends BaseMongoModel> implements Reposito
     }
 
     public static String[] BASE_EXCLUDE_FIELDS = new String[]{"creator", "_id", "created", "modified", "modifier", "active"};
-
 
     public static Query newActiveQuery(boolean excludeBaseField) {
         Query query = new Query(CRITERIA_ACTIVE());

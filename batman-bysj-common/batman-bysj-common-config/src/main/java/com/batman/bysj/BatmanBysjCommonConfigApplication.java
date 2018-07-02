@@ -34,20 +34,21 @@ public class BatmanBysjCommonConfigApplication implements CommandLineRunner {
 
     @Resource(name="coreSqlSessionFactory")
     SqlSessionFactory sqlSessionFactory;
+
     @Override
     public void run(String... strings) throws Exception {
-        List<Test> tests = testMapper.selectAll();
-        System.out.println("testMapper ------------------------>" + tests.size());
-        List<ComCode> comCodes = comCodeMapper.selectByExampleAndRowBounds(new Example(ComCode.class), new RowBounds(0, 10));
-        System.out.println(comCodes.size());
-        //方法一
-        PageHelper.startPage(1,10);
-        List<ComCode> comCodes1 = comCodeMapper.selectAll();
-        System.out.println("==============>comCodes1:" + comCodes1.size());
-        //方法二
-        Page<ComCode> comCodes2 = PageHelper.startPage(1, 10).doSelectPage(() -> comCodeMapper.selectAll());
-        System.out.println("==============>comCodes2:" + comCodes2.getResult().size());
-        System.out.println("==============>comCodes2.count:" + comCodes2.getTotal());
+//        List<Test> tests = testMapper.selectAll();
+//        System.out.println("testMapper ------------------------>" + tests.size());
+//        List<ComCode> comCodes = comCodeMapper.selectByExampleAndRowBounds(new Example(ComCode.class), new RowBounds(0, 10));
+//        System.out.println(comCodes.size());
+//        //方法一
+//        PageHelper.startPage(1,10);
+//        List<ComCode> comCodes1 = comCodeMapper.selectAll();
+//        System.out.println("==============>comCodes1:" + comCodes1.size());
+//        //方法二
+//        Page<ComCode> comCodes2 = PageHelper.startPage(1, 10).doSelectPage(() -> comCodeMapper.selectAll());
+//        System.out.println("==============>comCodes2:" + comCodes2.getResult().size());
+//        System.out.println("==============>comCodes2.count:" + comCodes2.getTotal());
 
 
     }

@@ -25,6 +25,16 @@
 			<artifactId>batman-bysj-common-dao</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
+		<dependency>
+			<groupId>com.batman.bysj</groupId>
+			<artifactId>batman-bysj-common-config</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.batman.bysj</groupId>
+			<artifactId>batman-bysj-common-mongo</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 
 

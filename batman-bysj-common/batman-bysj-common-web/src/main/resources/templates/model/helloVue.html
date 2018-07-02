@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head th:include="include :: header">
+    <meta charset="utf-8"/>
+    <title>Hello World!</title>
+</head>
+<body>
+<h1 th:inline="text" class="btn btn-primary">Hello.v.2</h1>
+<p th:text="${hello}"></p>
+<div id="tabledemo">
+    Filter by anything: <input v-model="search">
+    <hr>
+    <data-table :users="filteredUsers"></data-table>
+</div>
+<div th:include="include :: footer"></div>
+<script src="/js/modules/helloVue.js"></script>
+</body>
+</html>
