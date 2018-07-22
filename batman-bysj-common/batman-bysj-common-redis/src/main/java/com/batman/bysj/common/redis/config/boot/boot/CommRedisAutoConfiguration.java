@@ -1,4 +1,4 @@
-package com.batman.bysj.common.redis.config.boot;
+package com.batman.bysj.common.redis.config.boot.boot;
 
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
@@ -19,7 +19,7 @@ import redis.clients.jedis.JedisPoolConfig;
 @EnableConfigurationProperties(CommRedisProperties.class)
 public class CommRedisAutoConfiguration {
 
-    @Bean
+    @Bean(name ="redisConnectionFactory")
     @Primary
     @ConditionalOnProperty(prefix = "batman.cache", name = "local", havingValue = "false")
     public RedisConnectionFactory redisConnectionFactory(CommRedisProperties properties) {

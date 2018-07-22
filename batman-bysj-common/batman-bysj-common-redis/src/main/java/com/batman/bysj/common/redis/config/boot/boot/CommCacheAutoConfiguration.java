@@ -1,4 +1,4 @@
-package com.batman.bysj.common.redis.config.boot;
+package com.batman.bysj.common.redis.config.boot.boot;
 
 import com.batman.bysj.common.base.Loggable;
 import com.batman.bysj.common.redis.cache.CacheKeyGenerator;

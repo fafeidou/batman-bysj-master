@@ -28,6 +28,7 @@
         <option value="$PROJECT_DIR$/batman-bysj-common-mongo/pom.xml" />
         <option value="$PROJECT_DIR$/batman-bysj-common-dao-generator/pom.xml" />
         <option value="$PROJECT_DIR$/batman-bysj-common-web/pom.xml" />
+        <option value="$PROJECT_DIR$/batman-bysj-common-redis-cluster/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

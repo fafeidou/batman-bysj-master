@@ -12,15 +12,15 @@ public class BatmanBysjCommonMailApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 
-		MailClient mailClient = MailClientFactory.fromDefaultProperties();
-
-		Mail mail = new Mail()
-				.setSubject("Hello, World!")
-				.setContentType("text/html")
-				.setContent("<h1>This is a test mail!</h1>")
-				.setReceivers(Collections.singletonList("943104990@qq.com"));
-
-		mailClient.send(mail);
+//		MailClient mailClient = MailClientFactory.fromDefaultProperties();
+//
+//		Mail mail = new Mail()
+//				.setSubject("Hello, World!")
+//				.setContentType("text/html")
+//				.setContent("<h1>This is a test mail!</h1>")
+//				.setReceivers(Collections.singletonList("787793569@qq.com"));
+//
+//		mailClient.send(mail);
 	}
 
 	public static void main(String[] args) {

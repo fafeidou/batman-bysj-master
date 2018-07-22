@@ -1,4 +1,4 @@
-package com.batman.bysj.common.redis.config.boot;
+package com.batman.bysj.common.redis.config.boot.boot;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 

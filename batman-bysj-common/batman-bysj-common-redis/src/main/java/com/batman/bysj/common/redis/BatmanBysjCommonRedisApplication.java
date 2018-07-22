@@ -4,10 +4,15 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.data.redis.core.RedisTemplate;
-import org.springframework.data.redis.core.SetOperations;
-import org.springframework.data.redis.core.ZSetOperations;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.dao.DataAccessException;
+import org.springframework.data.redis.connection.RedisClusterConfiguration;
+import org.springframework.data.redis.connection.RedisConnection;
+import org.springframework.data.redis.connection.StringRedisConnection;
+import org.springframework.data.redis.core.*;
+import redis.clients.jedis.JedisCluster;
 
+import java.util.List;
 import java.util.Set;
 
 @SpringBootApplication
@@ -16,7 +21,6 @@ public class BatmanBysjCommonRedisApplication implements CommandLineRunner {
     private TransactionId transactionId;
     @Autowired
     private RedisTemplate redisTemplate;
-
     public static void main(String[] args) {
         SpringApplication.run(BatmanBysjCommonRedisApplication.class, args);
     }
@@ -45,6 +49,29 @@ public class BatmanBysjCommonRedisApplication implements CommandLineRunner {
         }
         Set topicId = zSetOperations.rangeByScore("topicId", 80, 100, 0, 2);
         System.out.println(topicId.toString());
+        ValueOperations<String, String> opsForValue = redisTemplate.opsForValue();
+        opsForValue.set("redisKey", "cluster test");
+        System.out.println("11" + opsForValue.get("redisKey"));
+
+//        redisTemplate.executePipelined((RedisCallback<String>) connection -> {
+//            StringRedisConnection conn = (StringRedisConnection) connection;
+//            for (int i = 0; i < 10000; i++) {
+//                conn.hSet("test-pipeline", "field" + i, "value" + i);
+//            }
+//            return null;
+//        });
+//        List<Object> results = redisTemplate.executePipelined(
+//                new RedisCallback<Object>() {
+//                    public Object doInRedis(RedisConnection connection) throws DataAccessException {
+//                        StringRedisConnection stringRedisConn = (StringRedisConnection)connection;
+//                        for(int i=0; i< 22; i++) {
+//                            stringRedisConn.rPop("myqueue");
+//                        }
+//                        return null;
+//                    }
+//                });
+
+
     }
 
 //    @Configuration
@@ -53,5 +80,6 @@ public class BatmanBysjCommonRedisApplication implements CommandLineRunner {
 //            MasterDataCacheHelper.useRedisConnectionFactory(redisConnectionFactory);
 //        }
 //    }
+
 
 }

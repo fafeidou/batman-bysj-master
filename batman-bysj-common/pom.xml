@@ -17,6 +17,7 @@
 		<module>batman-bysj-common-kafka</module>
 		<module>batman-bysj-common-sms</module>
 		<module>batman-bysj-common-redis</module>
+		<module>batman-bysj-common-redis-cluster</module>
 		<module>batman-bysj-common-dao-generator</module>
 		<module>batman-bysj-common-web</module>
 		<module>batman-bysj-common-mongo</module>
