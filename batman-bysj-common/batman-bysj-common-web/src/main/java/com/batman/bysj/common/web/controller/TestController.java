@@ -20,19 +20,6 @@ import java.util.List;
 @Api(tags ="测试swagger")
 @Controller
 public class TestController {
-    @RequestMapping("/")
-    @ResponseBody
-    public Test test() {
-        Test test = new Test();
-        test.setName("name");
-//        try {
-//
-//            int i = 1 / 0;
-//        } catch (Exception e) {
-//            throw new RuntimeException("除零了");
-//        }
-        return test;
-    }
 
     @RequestMapping("/hello")
     @ApiOperation(value = "查询测试", notes = "查询测试1")

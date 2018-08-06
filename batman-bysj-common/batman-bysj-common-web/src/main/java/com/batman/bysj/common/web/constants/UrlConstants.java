@@ -12,6 +12,7 @@ public interface UrlConstants {
         String UPDATE = "/update";
         String DELETE = "/delete";
         String INFO = "/info";
+        String LOGIN = "/login";
     }
 }
 

@@ -11,6 +11,7 @@
         <module name="batman-bysj-common-core" />
         <module name="batman-bysj-common-dao" />
         <module name="batman-bysj-common-dao-generator" />
+        <module name="batman-bysj-common-es" />
         <module name="batman-bysj-common-kafka" />
         <module name="batman-bysj-common-mail" />
         <module name="batman-bysj-common-model" />
@@ -20,6 +21,7 @@
         <module name="batman-bysj-common-redis-cluster" />
         <module name="batman-bysj-common-service" />
         <module name="batman-bysj-common-sms" />
+        <module name="batman-bysj-common-solr-cloud" />
         <module name="batman-bysj-common-util" />
         <module name="batman-bysj-common-web" />
         <module name="batman-bysj-discovery" />
@@ -28,7 +30,6 @@
         <module name="batman-bysj-provider-teacher" />
         <module name="batman-bysj-sidecar-client" />
         <module name="batman-bysj-sidecar-server" />
-        <module name="demo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -38,6 +39,7 @@
       <module name="batman-bysj-common-core" target="1.8" />
       <module name="batman-bysj-common-dao" target="1.8" />
       <module name="batman-bysj-common-dao-generator" target="1.8" />
+      <module name="batman-bysj-common-es" target="1.8" />
       <module name="batman-bysj-common-kafka" target="1.8" />
       <module name="batman-bysj-common-mail" target="1.8" />
       <module name="batman-bysj-common-model" target="1.8" />
@@ -47,9 +49,10 @@
       <module name="batman-bysj-common-redis-cluster" target="1.8" />
       <module name="batman-bysj-common-service" target="1.8" />
       <module name="batman-bysj-common-sms" target="1.8" />
+      <module name="batman-bysj-common-solr-cloud" target="1.8" />
       <module name="batman-bysj-common-util" target="1.8" />
       <module name="batman-bysj-common-web" target="1.8" />
-      <module name="batman-bysj-discovery" target="1.8" />
+      <module name="batman-bysj-discovery" target="1.5" />
       <module name="batman-bysj-master" target="1.8" />
       <module name="batman-bysj-provider" target="1.8" />
       <module name="batman-bysj-provider-admin" target="1.8" />
@@ -59,7 +62,6 @@
       <module name="batman-bysj-sidecar" target="1.8" />
       <module name="batman-bysj-sidecar-client" target="1.8" />
       <module name="batman-bysj-sidecar-server" target="1.8" />
-      <module name="demo" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

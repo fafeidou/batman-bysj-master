@@ -26,7 +26,7 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>com.bysj.common</groupId>
+			<groupId>com.batman.bysj</groupId>
 			<artifactId>batman-bysj-common-util</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>

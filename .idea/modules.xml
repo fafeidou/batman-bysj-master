@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-core/batman-bysj-common-core.iml" filepath="$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-core/batman-bysj-common-core.iml" />
       <module fileurl="file://$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-dao/batman-bysj-common-dao.iml" filepath="$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-dao/batman-bysj-common-dao.iml" />
       <module fileurl="file://$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-dao-generator/batman-bysj-common-dao-generator.iml" filepath="$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-dao-generator/batman-bysj-common-dao-generator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-es/batman-bysj-common-es.iml" filepath="$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-es/batman-bysj-common-es.iml" />
       <module fileurl="file://$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-kafka/batman-bysj-common-kafka.iml" filepath="$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-kafka/batman-bysj-common-kafka.iml" />
       <module fileurl="file://$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-mail/batman-bysj-common-mail.iml" filepath="$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-mail/batman-bysj-common-mail.iml" />
       <module fileurl="file://$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-model/batman-bysj-common-model.iml" filepath="$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-model/batman-bysj-common-model.iml" />
@@ -17,6 +18,7 @@
       <module fileurl="file://$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-redis-cluster/batman-bysj-common-redis-cluster.iml" filepath="$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-redis-cluster/batman-bysj-common-redis-cluster.iml" />
       <module fileurl="file://$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-service/batman-bysj-common-service.iml" filepath="$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-service/batman-bysj-common-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-sms/batman-bysj-common-sms.iml" filepath="$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-sms/batman-bysj-common-sms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-slor-cloud/batman-bysj-common-solr-cloud.iml" filepath="$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-slor-cloud/batman-bysj-common-solr-cloud.iml" />
       <module fileurl="file://$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-util/batman-bysj-common-util.iml" filepath="$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-util/batman-bysj-common-util.iml" />
       <module fileurl="file://$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-web/batman-bysj-common-web.iml" filepath="$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-web/batman-bysj-common-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/batman-bysj-discovery/batman-bysj-discovery.iml" filepath="$PROJECT_DIR$/batman-bysj-discovery/batman-bysj-discovery.iml" />

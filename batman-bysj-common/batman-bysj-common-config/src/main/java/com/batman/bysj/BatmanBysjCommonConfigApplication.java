@@ -46,9 +46,9 @@ public class BatmanBysjCommonConfigApplication implements CommandLineRunner {
 //        List<ComCode> comCodes1 = comCodeMapper.selectAll();
 //        System.out.println("==============>comCodes1:" + comCodes1.size());
 //        //方法二
-//        Page<ComCode> comCodes2 = PageHelper.startPage(1, 10).doSelectPage(() -> comCodeMapper.selectAll());
-//        System.out.println("==============>comCodes2:" + comCodes2.getResult().size());
-//        System.out.println("==============>comCodes2.count:" + comCodes2.getTotal());
+        Page<ComCode> comCodes2 = PageHelper.startPage(1, 10).doSelectPage(() -> comCodeMapper.selectAll());
+        System.out.println("==============>comCodes2:" + comCodes2.getResult().size());
+        System.out.println("==============>comCodes2.count:" + comCodes2.getTotal());
 
 
     }

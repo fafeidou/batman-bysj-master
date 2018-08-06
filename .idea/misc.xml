@@ -4,40 +4,10 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/batman-bysj-discovery/pom.xml" />
-        <option value="$PROJECT_DIR$/batman-bysj-provider-api/pom.xml" />
-        <option value="$PROJECT_DIR$/batman-bysj-provider-admin-api/pom.xml" />
-        <option value="$PROJECT_DIR$/batman-bysj-common/pom.xml" />
-        <option value="$PROJECT_DIR$/batman-bysj-common-core/pom.xml" />
-        <option value="$PROJECT_DIR$/batman-bysj-common-util/pom.xml" />
-        <option value="$PROJECT_DIR$/batman-bysj-common-config/pom.xml" />
-        <option value="$PROJECT_DIR$/batman-bysj-provider/pom.xml" />
-        <option value="$PROJECT_DIR$/batman-bysj-provider-admin/pom.xml" />
-        <option value="$PROJECT_DIR$/batman-bysj-common-base/pom.xml" />
-        <option value="$PROJECT_DIR$/batman-bysj-common-dao/pom.xml" />
-        <option value="$PROJECT_DIR$/batman-bysj-common-model/pom.xml" />
-        <option value="$PROJECT_DIR$/batman-bysj-common-service/pom.xml" />
-        <option value="$PROJECT_DIR$/batman-bysj-provider-teacher/pom.xml" />
-        <option value="$PROJECT_DIR$/batman-bysj-sidecar/pom.xml" />
-        <option value="$PROJECT_DIR$/batman-bysj-sidecar-server/pom.xml" />
-        <option value="$PROJECT_DIR$/batman-bysj-sidecar-client/pom.xml" />
-        <option value="$PROJECT_DIR$/batman-bysj-common-oss/pom.xml" />
-        <option value="$PROJECT_DIR$/batman-bysj-common-kafka/pom.xml" />
-        <option value="$PROJECT_DIR$/batman-bysj-common-sms/pom.xml" />
-        <option value="$PROJECT_DIR$/batman-bysj-common-redis/pom.xml" />
-        <option value="$PROJECT_DIR$/batman-bysj-common-mongo/pom.xml" />
-        <option value="$PROJECT_DIR$/batman-bysj-common-dao-generator/pom.xml" />
-        <option value="$PROJECT_DIR$/batman-bysj-common-web/pom.xml" />
-        <option value="$PROJECT_DIR$/batman-bysj-common-redis-cluster/pom.xml" />
       </list>
-    </option>
-    <option name="ignoredFiles">
-      <set>
-        <option value="$PROJECT_DIR$/batman-bysj-common/pom.xml" />
-      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
-    <output url="file://$PROJECT_DIR$/out" />
+    <output url="file://$PROJECT_DIR$/classes" />
   </component>
 </project>

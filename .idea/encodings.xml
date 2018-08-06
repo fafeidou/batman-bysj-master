@@ -8,6 +8,7 @@
     <file url="file://$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-core" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-dao" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-dao-generator" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-es" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-kafka" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-mail" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-model" charset="UTF-8" />
@@ -16,6 +17,7 @@
     <file url="file://$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-redis" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-redis-cluster" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-slor-cloud" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-sms" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-util" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-web" charset="UTF-8" />
@@ -28,7 +30,6 @@
     <file url="file://$PROJECT_DIR$/batman-bysj-sidecar" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/batman-bysj-sidecar/batman-bysj-sidecar-client" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/batman-bysj-sidecar/batman-bysj-sidecar-server" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/demo" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
