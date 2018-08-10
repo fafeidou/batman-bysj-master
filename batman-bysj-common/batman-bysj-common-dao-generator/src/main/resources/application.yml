@@ -1,0 +1,6 @@
+spring:
+  datasource:
+      driverClassName: com.mysql.jdbc.Driver
+      url: jdbc:mysql://10.0.0.83:3306/hs_core
+      username: root
+      password: sneakerhead

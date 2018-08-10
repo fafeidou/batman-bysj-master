@@ -1,0 +1,12 @@
+spring:
+  data:
+    solr:
+      host: http://10.0.1.92:8180/solr/collection1
+      repositories:
+        enabled: true
+      zk-host: 10.0.1.92:2181,10.0.1.92:2882,10.0.1.92:2183
+  datasource:
+     url:
+     username:
+     password:
+     driver-class-name: com.mysql.jdbc.Driver
