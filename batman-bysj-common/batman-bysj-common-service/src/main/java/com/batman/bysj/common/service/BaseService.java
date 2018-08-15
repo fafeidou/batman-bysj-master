@@ -8,11 +8,11 @@ import tk.mybatis.mapper.common.Mapper;
 
 import java.util.List;
 
-/** 
-* 
-* @author victor.qin 
+/**
+*
+* @author victor.qin
 * @date 2018/4/4 11:20
-*/ 
+*/
 public abstract class BaseService<T> implements IService<T> {
 
     /**

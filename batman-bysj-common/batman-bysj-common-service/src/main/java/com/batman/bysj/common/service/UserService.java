@@ -10,4 +10,6 @@ import com.batman.bysj.common.model.response.UserPageBean;
  */
 public interface UserService extends IService<User> {
     UserPageBean getUserPage(UserForm userForm);
+
+    User getUserByName(String userName);
 }

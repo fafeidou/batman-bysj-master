@@ -1,6 +1,7 @@
 package com.batman.bysj.mongo.domain;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.ArrayList;
@@ -9,6 +10,7 @@ import java.util.List;
 /**
  * 图片管理的model
  */
+@EqualsAndHashCode(callSuper = true)
 @Data
 @Document(collection = "image_group")
 public class ImageGroup extends BaseMongoModel{

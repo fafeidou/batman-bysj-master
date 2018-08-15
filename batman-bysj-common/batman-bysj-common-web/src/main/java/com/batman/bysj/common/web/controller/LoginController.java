@@ -1,8 +1,6 @@
 package com.batman.bysj.common.web.controller;
 
-import com.batman.bysj.common.web.constants.UrlConstants;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
  * @author victor.qin
@@ -11,13 +9,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class LoginController {
 
-    @RequestMapping("/")
-    public String index() {
-        return "index";
-    }
-
-    @RequestMapping(value = UrlConstants.UserUrl.LOGIN)
-    public String login() {
-        return "login";
-    }
+//    @RequestMapping("/")
+//    public String index() {
+//        return "login";
+//    }
+//
+//    @RequestMapping(value = UrlConstants.UserUrl.LOGIN)
+//    public String login(@RequestParam("userName") String userName,@RequestParam("passWord") String passWord) {
+//        if(userName.equals("user") && userName.equals("password")){
+//            return "hello";
+//        }
+//        return "login";
+//    }
 }

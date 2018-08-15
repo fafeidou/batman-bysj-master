@@ -26,7 +26,7 @@ public class ImageMangerService {
 
     protected final Logger logger = LoggerFactory.getLogger(getClass());
 
-    @Autowired
+    @Autowired(required = false)
     private ImageMangerDao imageMangerDao;
 
     /**

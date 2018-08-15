@@ -12,6 +12,7 @@ import tk.mybatis.mapper.mapperhelper.MapperHelper;
 
 import javax.annotation.PostConstruct;
 import java.util.List;
+
 import tk.mybatis.mapper.common.Mapper;
 
 /**
@@ -26,7 +27,7 @@ public class CustomizedMapperAutoConfiguration {
 
     private final List<SqlSessionFactory> sqlSessionFactoryList;
     @Autowired
-    private       MapperProperties  properties;
+    private MapperProperties properties;
 
     public CustomizedMapperAutoConfiguration(List<SqlSessionFactory> sqlSessionFactoryList) {
         this.sqlSessionFactoryList = sqlSessionFactoryList;

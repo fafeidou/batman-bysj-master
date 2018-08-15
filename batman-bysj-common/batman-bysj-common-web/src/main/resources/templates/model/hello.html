@@ -6,6 +6,7 @@
 </head>
 <body>
 <div id="rrapp">
+    <input type="text" class="form-control" th:value="${session.userName}" readonly/>
     <div v-show="showList">
         <div>
             <input type="text" class="form-control" v-model="q.userName" @keyup.enter="query" placeholder="用户名称"/>

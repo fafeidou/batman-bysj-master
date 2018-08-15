@@ -25,6 +25,7 @@ public class UserController {
         this.userService = userService;
     }
 
+    //    @PreAuthorize("hasRole('ADMIN')")
     @PostMapping(value = UrlConstants.UserUrl.GET_USER_PAPE)
     @ResponseBody
     public WebApiResponse<UserPageBean> getUserPage(@RequestBody UserForm userForm) {
@@ -46,10 +47,6 @@ public class UserController {
     @PostMapping(value = UrlConstants.UserUrl.DELETE)
     @ResponseBody
     public WebApiResponse<Integer> delete(@RequestBody Integer[] ids) {
-//        Example example = new Example(User.class);
-//        example.setTableName("user");
-//        example.createCriteria().andIn("id", Arrays.asList(ids));
-//        List<User> users = userService.selectByExample(example);
         if (!ListUtils.isEmpty(Arrays.asList(ids))) {
             for (Integer integer : Arrays.asList(ids)) {
                 userService.deleteByKey(integer);

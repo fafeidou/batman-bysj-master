@@ -9,7 +9,11 @@ import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
+import org.springframework.util.CollectionUtils;
 import tk.mybatis.mapper.entity.Example;
+
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * @author victor.qin
@@ -29,5 +33,16 @@ public class UserServiceImpl extends BaseService<User> implements UserService {
         userPageBean.setTotal(userList.getTotal());
         userPageBean.setTotalPage(userList.getPages());
         return userPageBean;
+    }
+
+    @Override
+    public User getUserByName(String userName) {
+        User user = new User();
+        user.setUserName(userName);
+        List<User> userList = this.select(user);
+        if(!CollectionUtils.isEmpty(userList)){
+            return userList.iterator().next();
+        }
+        return null;
     }
 }

@@ -8,7 +8,7 @@ spring:
               driver-class-name: com.mysql.jdbc.Driver
               type: com.alibaba.druid.pool.DruidDataSource
               driverClassName: com.mysql.jdbc.Driver
-              url: jdbc:mysql://10.0.0.83:3306/bysj?useUnicode=true&characterEncoding=utf8&useSSL=false
+              url: jdbc:mysql://10.0.0.83:3306/batman?useUnicode=true&characterEncoding=utf8&useSSL=false
               username: root
               password: sneakerhead
               initialSize: 1
@@ -69,8 +69,9 @@ pagehelper:
   reasonable: true
   support-methods-arguments: true
   params: count=countSql
-logging:
-  level:
-  com.batman.bysj: debug
+
 mybatis:
   type-aliases-package: com.batman.bysj.common.model
+mapper:
+  identity: MYSQL
+  mappers: tk.mybatis.mapper.common.Mapper

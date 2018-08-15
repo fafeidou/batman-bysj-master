@@ -5,8 +5,15 @@ spring:
   thymeleaf:
     cache: false
     mode: LEGACYHTML5
+    suffix: .html
   profiles:
     include: datasource
+
 logging:
   level:
-  com.batman.bysj: info
+    com.batman.bysj: debug
+
+#security:
+#  user:
+#    name: user
+#    password: user

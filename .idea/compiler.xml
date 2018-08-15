@@ -52,7 +52,7 @@
       <module name="batman-bysj-common-solr-cloud" target="1.8" />
       <module name="batman-bysj-common-util" target="1.8" />
       <module name="batman-bysj-common-web" target="1.8" />
-      <module name="batman-bysj-discovery" target="1.5" />
+      <module name="batman-bysj-discovery" target="1.8" />
       <module name="batman-bysj-master" target="1.8" />
       <module name="batman-bysj-provider" target="1.8" />
       <module name="batman-bysj-provider-admin" target="1.8" />
