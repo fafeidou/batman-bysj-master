@@ -17,6 +17,7 @@
         <module name="batman-bysj-common-model" />
         <module name="batman-bysj-common-mongo" />
         <module name="batman-bysj-common-oss" />
+        <module name="batman-bysj-common-rabbit-mq" />
         <module name="batman-bysj-common-redis" />
         <module name="batman-bysj-common-redis-cluster" />
         <module name="batman-bysj-common-service" />
@@ -45,6 +46,7 @@
       <module name="batman-bysj-common-model" target="1.8" />
       <module name="batman-bysj-common-mongo" target="1.8" />
       <module name="batman-bysj-common-oss" target="1.8" />
+      <module name="batman-bysj-common-rabbit-mq" target="1.8" />
       <module name="batman-bysj-common-redis" target="1.8" />
       <module name="batman-bysj-common-redis-cluster" target="1.8" />
       <module name="batman-bysj-common-service" target="1.8" />

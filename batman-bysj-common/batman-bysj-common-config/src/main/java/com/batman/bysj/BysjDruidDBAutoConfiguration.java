@@ -87,8 +87,8 @@ public class BysjDruidDBAutoConfiguration {
     public DataSourceTransactionManager bysjTransactionManager(@Qualifier("bysjDataSource") DataSource dataSource) {
         return new DataSourceTransactionManager(dataSource);
     }
-
     @Bean(name = "bysjSqlSessionTemplate")
+
     @Primary
     public SqlSessionTemplate bysjSqlSessionTemplate(@Qualifier("bysjSqlSessionFactory") SqlSessionFactory sqlSessionFactory) throws Exception {
         return new SqlSessionTemplate(sqlSessionFactory);

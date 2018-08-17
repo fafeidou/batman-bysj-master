@@ -4,6 +4,7 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/batman-bysj-common-rabbit-mq/pom.xml" />
       </list>
     </option>
   </component>

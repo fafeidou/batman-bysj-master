@@ -1,6 +1,6 @@
 package com.batman.bysj.common.web.controller;
 
-import com.batman.bysj.common.model.User;
+import com.batman.bysj.common.model.UserInfoX;
 import com.batman.bysj.common.model.request.UserForm;
 import com.batman.bysj.common.model.response.UserPageBean;
 import com.batman.bysj.common.service.UserService;
@@ -34,13 +34,13 @@ public class UserController {
 
     @PostMapping(value = UrlConstants.UserUrl.SAVE)
     @ResponseBody
-    public WebApiResponse<Integer> save(@RequestBody User user) {
+    public WebApiResponse<Integer> save(@RequestBody UserInfoX user) {
         return WebApiResponse.success(userService.save(user));
     }
 
     @PostMapping(value = UrlConstants.UserUrl.UPDATE)
     @ResponseBody
-    public WebApiResponse<Integer> update(@RequestBody User user) {
+    public WebApiResponse<Integer> update(@RequestBody UserInfoX user) {
         return WebApiResponse.success(userService.update(user));
     }
 
@@ -57,7 +57,7 @@ public class UserController {
 
     @GetMapping(value = UrlConstants.UserUrl.INFO)
     @ResponseBody
-    public WebApiResponse<User> info(@RequestParam("id") Integer id) {
+    public WebApiResponse<UserInfoX> info(@RequestParam("id") Integer id) {
         return WebApiResponse.success(userService.selectByKey(id));
     }
 

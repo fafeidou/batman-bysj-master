@@ -13,7 +13,7 @@ import java.io.Serializable;
 @ToString(callSuper = true)
 @Data
 @Table(name = "user")
-public class User extends BaseEntity implements Serializable {
+public class UserInfoX extends BaseEntity implements Serializable {
     private String userName;
     private String address;
     private String password;

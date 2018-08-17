@@ -1,8 +1,9 @@
 package com.batman.bysj.common.web;
 
-import com.batman.bysj.common.model.User;
+import com.batman.bysj.common.model.UserInfoX;
 import com.batman.bysj.common.service.ImageMangerService;
 import com.batman.bysj.common.service.UserService;
+import com.batman.bysj.common.web.service.TrTest;
 import com.batman.bysj.mongo.dao.ImageDao;
 import com.batman.bysj.mongo.dao.ImageMangerDao;
 import com.batman.bysj.mongo.domain.ImageGroup;
@@ -12,9 +13,7 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.domain.Example;
-import org.springframework.data.domain.ExampleMatcher;
 import org.springframework.data.domain.Page;
-import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.test.context.junit4.SpringRunner;
@@ -52,8 +51,8 @@ public class BatmanBysjCommonWebApplicationTests {
     @Test
     public void test() throws ExecutionException, InterruptedException {
         ExecutorService executorService = Executors.newFixedThreadPool(10);
-        CompletableFuture<List<User>> profitFuture = test1(executorService);
-        CompletableFuture<List<User>> profitFuture2 = test2(executorService);
+        CompletableFuture<List<UserInfoX>> profitFuture = test1(executorService);
+        CompletableFuture<List<UserInfoX>> profitFuture2 = test2(executorService);
         StopWatch stopWatch = new StopWatch("DB reading...");
         stopWatch.start("111");
         profitFuture.get();
@@ -77,12 +76,21 @@ public class BatmanBysjCommonWebApplicationTests {
 
     }
 
-    private CompletableFuture<List<User>> test2(ExecutorService executorService) {
+    private CompletableFuture<List<UserInfoX>> test2(ExecutorService executorService) {
         return CompletableFuture.supplyAsync(() -> userService.selectAll(), executorService);
     }
 
-    private CompletableFuture<List<User>> test1(ExecutorService executorService) {
+    private CompletableFuture<List<UserInfoX>> test1(ExecutorService executorService) {
         return CompletableFuture.supplyAsync(() -> userService.selectAll(), executorService);
     }
+
+    @Autowired
+    TrTest trTest;
+
+    @Test
+    public void testTr() {
+        trTest.a();
+    }
+
 
 }
