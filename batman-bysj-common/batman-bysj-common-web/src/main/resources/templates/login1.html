@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<meta name="renderer" content="webkit" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<!--<meta http-equiv="Access-Control-Allow-Origin" content="*" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="baidu-site-verification" content="li4DjXBJKk" />-->
+<title>######</title>
+<link rel="stylesheet" href="/css/layerui/style.css" th:href="@{/css/layerui/style.css}"/>
+<link rel="stylesheet" href="/css/layerui/swiper.min.css" th:href="@{/css/layerui/swiper.min.css}"/>
+<link rel="stylesheet" href="/css/layerui/layui.css" th:href="@{/css/layerui/layui.css}"/>
+<link rel="stylesheet" href="/css/layerui/awesome.css" th:href="@{/css/layerui/awesome.css}"/>
+
+<script src="/libs/jquery.min.js"></script>
+<script src="/libs/jquery.form.js"></script>
+<script src="/libs/base.js"></script>
+<script src="/libs/vue.min.js"></script>
+</head>
+<body>
+	<div class="layui-layout layui-layout-admin">
+		<div class="container con-bj">
+			<canvas id="canv"></canvas>
+			<div id="bg-overlay"></div>
+			<div class="cls-content">
+				<div class="cls-content-sm panel">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide swiper-no-swiping">
+								<div class="panel-body">
+									<div class="mar-ver">
+										<img src="/images/webicon/logo100X100.png" />
+										<h3>您的报告无处不在</h3>
+									</div>
+									<form class="layui-form" action="/common/login_do/login.do" method="post" id="loginForm">
+										<div class="layui-form-item ipt-text">
+											<div class="dp-block">
+												<i class="fa fa-user"></i>
+												<input type="text" name="username" placeholder="请输入账号" autocomplete="off" class="layui-input" lay-verify="required">
+											</div>
+										</div>
+										<div class="layui-form-item ipt-text">
+											<div class="dp-block">
+												<i class="fa fa-lock"></i>
+												<input type="password" name="password" placeholder="请输入密码" autocomplete="off" class="layui-input" lay-verify="required">
+											</div>
+										</div>
+										<div class="layui-form-item">
+											<div class="layui-input-inline">
+												<input type="text" name="vrifyCode" required lay-verify="required" placeholder="请输入验证码" autocomplete="off" class="layui-input">
+											</div>
+											<div class="layui-form-mid layui-word-aux">
+												<img name="Kaptcha" alt="验证码" onclick="this.src='/defaultKaptcha?d='+new Date()*1" src="/defaultKaptcha" id="loginyzm" />
+											</div>
+										</div>
+										<button type="button" class="layui-btn layui-btn-normal layui-btn-disabled dp-block" lay-submit lay-filter="loginForm">登 录</button>
+										<div style="padding-top: 30px;">
+											<a href="/social/sina">
+												<img src="/images/thirdpartlogin/sina.png" style="cursor: pointer" />
+											</a>
+											<a href="/social/weixin">
+												<img src="/images/thirdpartlogin/weixin.png" style="cursor: pointer" />
+											</a>
+											<!-- 
+											<a href="/social/mayun">
+												<img src="/images/thirdpartlogin/mayun.png" height="24px;" style="cursor: pointer" />
+											</a>-->
+										</div>
+										<div style="padding-top: 15px;">
+											<a href="/social/qq">
+												<img src="/images/thirdpartlogin/qq.png" style="cursor: pointer" />
+											</a>
+											<a href="/social/baidu">
+												<img src="/images/thirdpartlogin/baidu.png" style="cursor: pointer" />
+											</a>
+											<a href="/social/github">
+												<img height="26px;" src="/images/thirdpartlogin/github.jpg" style="cursor: pointer" />
+											</a>
+											<!-- 
+											<a href="/socialproxy/ali/index">
+												<img height="26px;" src="/images/thirdpartlogin/ali.png" style="cursor: pointer" />
+											</a> -->
+											<div id="login_container"></div>
+										</div>
+									</form>
+								</div>
+								<div class="pad-all">
+									<div class="col-6 box-left">
+										没有账号？
+										<a target="_blank" class="reg">立即注册</a>
+									</div>
+									<div class="col-6 box-right">
+										<a target="_blank" class="forgetPass">忘记密码？</a>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide swiper-no-swiping">
+								<div class="panel-body">
+									<div class="mar-ver">
+										<h3>（注册）</h3>
+									</div>
+									<form class="layui-form" action="/common/login_do/register.do" method="post" id="regForm">
+										<div class="layui-form-item ipt-text">
+											<div class="dp-block">
+												<i class="fa fa-user"></i>
+												<input type="text" name="username" placeholder="请输入账号" autocomplete="off" class="layui-input" lay-verify="required">
+											</div>
+										</div>
+										<div class="layui-form-item ipt-text">
+											<div class="dp-block">
+												<i class="fa fa-envelope-o"></i>
+												<input type="text" name="email" placeholder="请输入电子邮箱" autocomplete="off" class="layui-input" lay-verify="required">
+											</div>
+										</div>
+										<div class="layui-form-item ipt-text">
+											<div class="dp-block">
+												<i class="fa fa-lock"></i>
+												<input type="password" name="password" placeholder="请输入密码" autocomplete="off" class="layui-input" lay-verify="required">
+											</div>
+										</div>
+										<div class="layui-form-item ipt-text">
+											<div class="dp-block">
+												<i class="fa fa-lock"></i>
+												<input type="password" name="inputPassword" placeholder="请输入确认密码" autocomplete="off" class="layui-input" lay-verify="required">
+											</div>
+										</div>
+										<div class="layui-form-item">
+											<div class="layui-input-inline">
+												<input type="text" name="vrifyCode" required lay-verify="required" placeholder="请输入验证码" autocomplete="off" class="layui-input">
+											</div>
+											<div class="layui-form-mid layui-word-aux">
+												<!-- src="/defaultKaptcha" -->
+												<img alt="点击获取验证码" onclick="this.src='/defaultKaptcha?d='+new Date()*1" />
+											</div>
+										</div>
+										<button type="button" class="layui-btn layui-btn-normal dp-block" lay-submit lay-filter="regForm">注 册</button>
+									</form>
+								</div>
+								<div class="pad-all">
+									<div class="col-6 box-left">
+										已有账号？
+										<a target="_blank" class="login">立即登录</a>
+									</div>
+									<div class="col-6 box-right">
+										注册即表示同意遵守
+										<a target="_blank">协议条款</a>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide swiper-no-swiping">
+								<div class="panel-body">
+									<div class="mar-ver">
+										<h3>（忘记密码）</h3>
+									</div>
+									<form class="layui-form" action="" id="updatePassForm">
+										<div class="layui-form-item ipt-text">
+											<div class="dp-block">
+												<i class="fa fa-user"></i>
+												<input type="text" name="username" placeholder="请输入账号" autocomplete="off" class="layui-input" lay-verify="required">
+											</div>
+										</div>
+										<div class="layui-form-item">
+											<div class="layui-input-inline">
+												<input type="text" name="vrifyCode" required lay-verify="required" placeholder="请输入验证码" autocomplete="off" class="layui-input">
+											</div>
+											<div class="layui-form-mid layui-word-aux">
+												<!-- src="/defaultKaptcha" -->
+												<img alt="点击获取验证码" onclick="this.src='/defaultKaptcha?d='+new Date()*1" />
+											</div>
+										</div>
+										<button type="button" class="layui-btn layui-btn-normal dp-block" lay-submit lay-filter="updatePassForm">修 改</button>
+									</form>
+								</div>
+								<div class="pad-all">
+									<div class="col-6 box-left">
+										<a target="_blank" class="login">立即登录</a>
+									</div>
+									<div class="col-6 box-right">
+										没有账号？
+										<a target="_blank" class="reg">立即注册</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="switch-bg">
+		<div id="switch-bg-list">
+			<div class="switch-loading" style="display: none;">
+				<img id="bgimg" src="/img/bg_img/bg-img-6.jpg" alt="" class="switch-chg-bg " />
+				<!-- 
+			
+				<img src="/img/bg_img/thumbs/bg-trns.jpg" alt="" class="switch-chg-bg bg-trans active">
+				<img src="/img/bg_img/bg-img-1.jpg" alt="" class="switch-chg-bg" />
+				<img src="/img/bg_img/bg-img-2.jpg" alt="" class="switch-chg-bg " />
+				<img src="/img/bg_img/bg-img-3.jpg" alt="" class="switch-chg-bg " />
+				<img src="/img/bg_img/bg-img-4.jpg" alt="" class="switch-chg-bg " />
+				<img  src="/img/bg_img/bg-img-5.jpg" alt="" class="switch-chg-bg " />
+				
+				<img src="/img/bg_img/bg-img-7.jpg" alt="" class="switch-chg-bg " /> -->
+			</div>
+			<a target="_blank" href="http://www.miitbeian.gov.cn/" id="SYSTEM_authinfo">{{SYSTEM_authinfo}} </a>
+		</div>
+	</div>
+	<script src="/libs/swiper.js"></script>
+	<script src="/libs/layui.js"></script>
+	<script src="/js/login_reg_fPass.js"></script>
+
+	<script>
+        var app2 = new Vue({
+            el : '#SYSTEM_authinfo',
+            data : {
+                SYSTEM_authinfo : ''
+            },
+            created : function() {
+                var url = "/common/login_do/system_authinfo.do";
+                var _self = this;
+                $.post(url, function(data) {
+                    _self.SYSTEM_authinfo = data;
+                })
+            }
+        });
+        var app = new Vue({
+            el : '#loginForm',
+            data : {},
+            methods : {
+                weixinlogin : function() {
+                    location.href = '/common/weixin_do/tologin.do';
+                }
+            }
+        });
+        var obj = null;
+        //如果申请了 微信网站 扫码登陆 请把取消 注释
+        // $.get("/common/weixin_do/getAppid", function(data) {
+        //     var weixinurl=encodeURIComponent(data.weixinurl+"/common/weixin_do/login.do");
+        //    obj = new WxLogin({
+        //         id : "login_container", scope : "snsapi_login" ,state : "", style : "black", href : "",
+        //        appid : data.appid,
+        //        redirect_uri : "/social/weixin"
+        //    });
+        //  });
+        //$.get("/common/weixin_do/getAppid", function(data) {
+        //    var weixinurl = encodeURIComponent(data.weixinurl + "/common/weixin_do/login.do");
+        //    obj = new WxLogin({
+        //        id : "login_container",
+        //        scope : "snsapi_login",
+        //        state : "",
+        //        style : "black",
+        //       href : "impowerBox status",
+        //        appid : 'wxbdc5610cc59c1631',//别人的用于测试     wxbdc5610cc59c1631
+        //         redirect_uri : 'https%3A%2F%2Fpassport.yhd.com%2Fwechat%2Fcallback.do'//别人的用于测试  https%3A%2F%2Fpassport.yhd.com%2Fwechat%2Fcallback.do           
+        //     });
+        //  });
+        if ("${error!}" != "") {
+            alert('${error!}');
+        };
+    </script>
+</body>
+</html>

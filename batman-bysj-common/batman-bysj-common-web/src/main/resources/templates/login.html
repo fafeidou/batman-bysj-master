@@ -19,7 +19,7 @@
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
-            <a class="navbar-brand" href="#">Spring Security演示</a>
+            <a class="navbar-brand" href="#"></a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
@@ -34,14 +34,14 @@
         <p th:if="${param.logout}" class="bg-warning">已注销</p>
         <p th:if="${param.error}" class="bg-danger">有错误，请重试</p>
         <h2>使用账号密码登录</h2>
-        <form class="form-signin" role="form" name="form" th:action="@{/login}" action="/login" method="post">
+        <form class="form-signin" role="form" name="form" th:action="@{/login}"  method="post">
             <div class="form-group">
                 <label for="username">账号</label>
                 <input type="text" class="form-control" name="userName" value="" placeholder="账号"/>
             </div>
             <div class="form-group">
                 <label for="password">密码</label>
-                <input type="password" class="form-control" name="passWord" placeholder="密码"/>
+                <input type="password" class="form-control" name="password" placeholder="密码"/>
             </div>
             <input type="submit" id="login" value="Login" class="btn btn-primary"/>
         </form>

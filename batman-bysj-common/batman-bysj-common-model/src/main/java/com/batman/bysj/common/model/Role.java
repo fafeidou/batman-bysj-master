@@ -4,6 +4,7 @@ import lombok.Data;
 import lombok.ToString;
 
 import javax.persistence.Table;
+import java.io.Serializable;
 
 /**
  * @author victor.qin
@@ -12,7 +13,7 @@ import javax.persistence.Table;
 @ToString(callSuper = true)
 @Data
 @Table(name = "role")
-public class Role {
+public class Role extends BaseEntity implements Serializable {
     private Integer id;
     private String role;
 }

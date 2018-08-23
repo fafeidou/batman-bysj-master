@@ -3,11 +3,11 @@ package com.batman.bysj.common.web;
 import com.batman.bysj.common.model.UserInfoX;
 import com.batman.bysj.common.service.ImageMangerService;
 import com.batman.bysj.common.service.UserService;
-import com.batman.bysj.common.web.service.TrTest;
 import com.batman.bysj.mongo.dao.ImageDao;
 import com.batman.bysj.mongo.dao.ImageMangerDao;
 import com.batman.bysj.mongo.domain.ImageGroup;
 import com.batman.bysj.mongo.domain.ImageTestPageRequest;
+import org.apache.xerces.impl.dv.util.Base64;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -83,14 +83,14 @@ public class BatmanBysjCommonWebApplicationTests {
     private CompletableFuture<List<UserInfoX>> test1(ExecutorService executorService) {
         return CompletableFuture.supplyAsync(() -> userService.selectAll(), executorService);
     }
-
-    @Autowired
-    TrTest trTest;
-
     @Test
-    public void testTr() {
-        trTest.a();
-    }
+    public void insertUser(){
+        UserInfoX userInfoX = new UserInfoX();
+        userInfoX.setUserName("test");
+        userInfoX.setPassword(Base64.encode("123".getBytes()));
+        userInfoX.setCredentialSalt(Base64.encode(userInfoX.getPassword().getBytes()));
+        userService.save(userInfoX);
 
+    }
 
 }

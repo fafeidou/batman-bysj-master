@@ -12,7 +12,7 @@ spring:
 logging:
   level:
     com.batman.bysj: debug
-
+    org.springframework.security: info
 #security:
 #  user:
 #    name: user
