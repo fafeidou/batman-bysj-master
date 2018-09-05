@@ -9,12 +9,15 @@
     <file url="file://$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-dao" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-dao-generator" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-es" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-es-ext" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-kafka" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-mail" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-model" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-mongo" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-oss" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-rabbit-mq" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-rabbit" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-rabbit/batman-bysj-common-rabbit-mq" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-rabbit/batman-bysj-common-rabbit-mq-delay" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-redis" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-redis-cluster" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/batman-bysj-common/batman-bysj-common-service" charset="UTF-8" />

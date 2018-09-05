@@ -4,12 +4,6 @@
 <meta charset="UTF-8" />
 <meta name="renderer" content="webkit" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<!--<meta http-equiv="Access-Control-Allow-Origin" content="*" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-<meta name="apple-mobile-web-app-status-bar-style" content="black" />
-<meta name="apple-mobile-web-app-capable" content="yes" />
-<meta name="format-detection" content="telephone=no" />
-<meta name="baidu-site-verification" content="li4DjXBJKk" />-->
 <title>######</title>
 <link rel="stylesheet" href="/css/layerui/style.css" th:href="@{/css/layerui/style.css}"/>
 <link rel="stylesheet" href="/css/layerui/swiper.min.css" th:href="@{/css/layerui/swiper.min.css}"/>
@@ -33,8 +27,8 @@
 							<div class="swiper-slide swiper-no-swiping">
 								<div class="panel-body">
 									<div class="mar-ver">
-										<img src="/images/webicon/logo100X100.png" />
-										<h3>您的报告无处不在</h3>
+										<!--<img src="/images/webicon/logo100X100.png" />-->
+										<h3></h3>
 									</div>
 									<form class="layui-form" action="/common/login_do/login.do" method="post" id="loginForm">
 										<div class="layui-form-item ipt-text">
@@ -196,22 +190,12 @@
 		<div id="switch-bg-list">
 			<div class="switch-loading" style="display: none;">
 				<img id="bgimg" src="/img/bg_img/bg-img-6.jpg" alt="" class="switch-chg-bg " />
-				<!-- 
-			
-				<img src="/img/bg_img/thumbs/bg-trns.jpg" alt="" class="switch-chg-bg bg-trans active">
-				<img src="/img/bg_img/bg-img-1.jpg" alt="" class="switch-chg-bg" />
-				<img src="/img/bg_img/bg-img-2.jpg" alt="" class="switch-chg-bg " />
-				<img src="/img/bg_img/bg-img-3.jpg" alt="" class="switch-chg-bg " />
-				<img src="/img/bg_img/bg-img-4.jpg" alt="" class="switch-chg-bg " />
-				<img  src="/img/bg_img/bg-img-5.jpg" alt="" class="switch-chg-bg " />
-				
-				<img src="/img/bg_img/bg-img-7.jpg" alt="" class="switch-chg-bg " /> -->
 			</div>
-			<a target="_blank" href="http://www.miitbeian.gov.cn/" id="SYSTEM_authinfo">{{SYSTEM_authinfo}} </a>
 		</div>
 	</div>
 	<script src="/libs/swiper.js"></script>
 	<script src="/libs/layui.js"></script>
+	<script src="/libs/layui.all.js"></script>
 	<script src="/js/login_reg_fPass.js"></script>
 
 	<script>
@@ -237,31 +221,6 @@
                 }
             }
         });
-        var obj = null;
-        //如果申请了 微信网站 扫码登陆 请把取消 注释
-        // $.get("/common/weixin_do/getAppid", function(data) {
-        //     var weixinurl=encodeURIComponent(data.weixinurl+"/common/weixin_do/login.do");
-        //    obj = new WxLogin({
-        //         id : "login_container", scope : "snsapi_login" ,state : "", style : "black", href : "",
-        //        appid : data.appid,
-        //        redirect_uri : "/social/weixin"
-        //    });
-        //  });
-        //$.get("/common/weixin_do/getAppid", function(data) {
-        //    var weixinurl = encodeURIComponent(data.weixinurl + "/common/weixin_do/login.do");
-        //    obj = new WxLogin({
-        //        id : "login_container",
-        //        scope : "snsapi_login",
-        //        state : "",
-        //        style : "black",
-        //       href : "impowerBox status",
-        //        appid : 'wxbdc5610cc59c1631',//别人的用于测试     wxbdc5610cc59c1631
-        //         redirect_uri : 'https%3A%2F%2Fpassport.yhd.com%2Fwechat%2Fcallback.do'//别人的用于测试  https%3A%2F%2Fpassport.yhd.com%2Fwechat%2Fcallback.do           
-        //     });
-        //  });
-        if ("${error!}" != "") {
-            alert('${error!}');
-        };
     </script>
 </body>
 </html>

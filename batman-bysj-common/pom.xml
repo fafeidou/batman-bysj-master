@@ -23,7 +23,8 @@
 		<module>batman-bysj-common-mongo</module>
 		<module>batman-bysj-common-slor-cloud</module>
 		<module>batman-bysj-common-es</module>
-		<module>batman-bysj-common-rabbit-mq</module>
+		<module>batman-bysj-common-rabbit</module>
+		<module>batman-bysj-common-es-ext</module>
 	</modules>
 	<name>batman-bysj-common</name>
 	<description>batman-bysj-common</description>

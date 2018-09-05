@@ -5,7 +5,16 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/batman-bysj-common-rabbit-mq/pom.xml" />
+        <option value="$PROJECT_DIR$/batman-bysj-common-es-ext/pom.xml" />
+        <option value="$PROJECT_DIR$/com-batman-rabbitmq-delay/pom.xml" />
+        <option value="$PROJECT_DIR$/batman-bysj-common-rabbit-mq-delay/pom.xml" />
+        <option value="$PROJECT_DIR$/batman-bysj-common-rabbit/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/batman-bysj-common/com-batman-rabbitmq-delay/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">

@@ -12,12 +12,14 @@
         <module name="batman-bysj-common-dao" />
         <module name="batman-bysj-common-dao-generator" />
         <module name="batman-bysj-common-es" />
+        <module name="batman-bysj-common-es-ext" />
         <module name="batman-bysj-common-kafka" />
         <module name="batman-bysj-common-mail" />
         <module name="batman-bysj-common-model" />
         <module name="batman-bysj-common-mongo" />
         <module name="batman-bysj-common-oss" />
         <module name="batman-bysj-common-rabbit-mq" />
+        <module name="batman-bysj-common-rabbit-mq-delay" />
         <module name="batman-bysj-common-redis" />
         <module name="batman-bysj-common-redis-cluster" />
         <module name="batman-bysj-common-service" />
@@ -31,6 +33,7 @@
         <module name="batman-bysj-provider-teacher" />
         <module name="batman-bysj-sidecar-client" />
         <module name="batman-bysj-sidecar-server" />
+        <module name="com-batman-rabbitmq-delay" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -41,12 +44,15 @@
       <module name="batman-bysj-common-dao" target="1.8" />
       <module name="batman-bysj-common-dao-generator" target="1.8" />
       <module name="batman-bysj-common-es" target="1.8" />
+      <module name="batman-bysj-common-es-ext" target="1.8" />
       <module name="batman-bysj-common-kafka" target="1.8" />
       <module name="batman-bysj-common-mail" target="1.8" />
       <module name="batman-bysj-common-model" target="1.8" />
       <module name="batman-bysj-common-mongo" target="1.8" />
       <module name="batman-bysj-common-oss" target="1.8" />
+      <module name="batman-bysj-common-rabbit" target="1.8" />
       <module name="batman-bysj-common-rabbit-mq" target="1.8" />
+      <module name="batman-bysj-common-rabbit-mq-delay" target="1.8" />
       <module name="batman-bysj-common-redis" target="1.8" />
       <module name="batman-bysj-common-redis-cluster" target="1.8" />
       <module name="batman-bysj-common-service" target="1.8" />
@@ -64,6 +70,7 @@
       <module name="batman-bysj-sidecar" target="1.8" />
       <module name="batman-bysj-sidecar-client" target="1.8" />
       <module name="batman-bysj-sidecar-server" target="1.8" />
+      <module name="com-batman-rabbitmq-delay" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -1,5 +1,5 @@
 layui.config({
-    base : '/js/system/'
+    base : '/js/'
 }).use([
         'jquery', 'form', 'layer'], function() {
     var form = layui.form, layer = layui.layer, swiper = layui.swiper, $ = layui.jquery;

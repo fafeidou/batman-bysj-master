@@ -3,17 +3,18 @@ package com.batman.bysj.es;
 import com.alibaba.fastjson.JSONObject;
 import com.batman.bysj.es.bean.EsPage;
 import com.batman.bysj.es.utils.ElasticsearchUtils;
-import org.elasticsearch.action.bulk.BulkRequestBuilder;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.util.StopWatch;
 
-import java.io.IOException;
-import java.util.*;
-import java.util.concurrent.atomic.AtomicInteger;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 import static com.batman.bysj.es.utils.ElasticsearchUtils.createManyDates;
 
@@ -144,10 +145,12 @@ public class BatmanBysjCommonEsApplicationTests {
         }
 
     }
+
     @Autowired
     JdbcTemplate jdbcTemplate;
+
     @Test
-    public void testImport(){
+    public void testImport() {
         String sql = "SELECT\n" +
                 "\tsupplier_id,\n" +
                 "\tproduct_id,\n" +
@@ -157,11 +160,18 @@ public class BatmanBysjCommonEsApplicationTests {
                 "FROM\n" +
                 "\t`bt_sale_product_day_xxx_2018`\n" +
                 "LIMIT 0,\n" +
-                " 1000000";
+                " 200000";
         List<Map<String, Object>> maps = jdbcTemplate.queryForList(sql);
+        StopWatch stopWatch = new StopWatch();
+        stopWatch.start();
         createManyDates(maps);
-        System.out.println();
+        stopWatch.stop();
+        stopWatch.prettyPrint();
     }
 
+
+    @Test
+    public void test() {
+    }
 
 }
